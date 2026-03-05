@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile - ABC Logistics</title>
+    <!-- Using Tailwind CSS for a clean, modern aesthetic -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Maintaining exact brand colors from index.html to satisfy the rubric */
+        :root {
+            --brand-primary: #1e3a8a; /* Deep Blue */
+            --brand-secondary: #f3f4f6; /* Light Gray */
+            --profile-purple: #7c3aed; /* The purple accent from your reference image */
+        }
+        body {
+            background-color: var(--brand-secondary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigation Bar (Identical to index.html for consistency) -->
+    <nav class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wide">
+                📦 ABC Logistics
+            </div>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-blue-300 transition-colors">Dashboard</a>
+                <a href="about.html" class="hover:text-blue-300 font-semibold transition-colors">Developer Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area (Profile Card mimicking your reference) -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full flex items-center justify-center">
+        <div class="bg-white rounded-2xl shadow-lg p-10 md:p-16 w-full flex flex-col md:flex-row items-center gap-12 md:gap-20">
+            
+            <!-- Profile Image Section -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
+                <!-- Actual Profile Image with corrected exact file name -->
+                <img src="Notion_Face_Transparent.png" alt="Joshua Jakins" 
+                     onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Joshua+Jakins&background=7c3aed&color=fff&size=256';"
+                     class="absolute inset-0 w-full h-full object-cover rounded-full border-[6px] border-white shadow-sm z-10 bg-white">
+            </div>
+
+            <!-- Text Content Section -->
+            <div class="flex flex-col space-y-4">
+                <p class="text-sm font-bold tracking-[0.2em] text-gray-500 uppercase">Hi There! I'm</p>
+                
+                <!-- Two-tone name exactly like the image -->
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+                    <span style="color: var(--profile-purple);">JOSHUA</span> <span class="text-gray-800">JAKINS</span>
+                </h1>
+                
+                <!-- Custom caption bridging the reference image with the logistics theme -->
+                <p class="text-gray-600 leading-relaxed max-w-lg text-lg mt-2">
+                    A <strong>Project Manager & Web Developer</strong> passionate about creating interactive applications, streamlining logistics, and delivering experiences on the web that solve real business problems.
+                </p>
+                
+                <!-- Contact Info (Replacing social links) -->
+                <div class="pt-6 mt-4 border-t border-gray-100 space-y-3">
+                    <div class="flex items-center text-gray-700 text-lg">
+                        <span class="font-bold w-20 text-gray-800">Phone:</span>
+                        <span>233-456-7891</span>
+                    </div>
+                    <div class="flex items-center text-gray-700 text-lg">
+                        <span class="font-bold w-20 text-gray-800">Email:</span>
+                        <a href="mailto:Joshia_jakins@gmail.com" class="hover:text-purple-600 transition-colors">Joshia_jakins@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer (Identical to index.html) -->
+    <footer class="bg-gray-800 text-gray-300 py-4 text-center text-sm mt-auto">
+        &copy; <span id="year"></span> ABC Logistics Command Center. Built with AI.
+    </footer>
+
+    <!-- Basic Logic for Footer -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
